@@ -29,3 +29,44 @@
 {
   justify-content: flex-end;
 }
+
+@media (max-width: 768px) {
+  .header-content {
+    > .header__subheader {
+      align-items: center;
+
+      > .header__image {
+        margin-left: -23px;
+        margin-right: -14px;
+        margin-top: -10px;
+        margin-bottom: -10px;
+      }
+    }
+
+    > .header__rightalign {
+      text-align: right;
+
+      > button {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .header-content {
+    > .header__subheader > .header__title {
+      font-size: 22px;
+    }
+
+    > .header__rightalign {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      > a {
+        margin-right: 0;
+      }
+    }
+  }
+}
